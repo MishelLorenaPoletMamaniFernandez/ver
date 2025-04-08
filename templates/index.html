@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa MASU S.R.L.</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+</head>
+
+       
+    <!-- Menú de Navegación -->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(255, 255, 255, 0.192);">
+    
+    <h1 class="navbar-brand" href="#" style="color: rgb(251, 249, 252); font-size: 30px;">MASU S.R.L.</h1>
+    <body>
+        <body style="background-image: url('{{ url_for('static', filename='images/fondo1.jpg') }}'); 
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        min-height: 100vh;
+        color: white;">
+    
+        
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="/" style="color: rgb(251, 249, 252);">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="/quienes-somos" style="color:rgb(251, 249, 252);">Quiénes somos</a></li>
+            <li class="nav-item"><a class="nav-link" href="/servicios" style="color: rgb(251, 249, 252);">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="/noticias" style="color: rgb(251, 249, 252);">Noticias</a></li>
+            <li class="nav-item"><a class="nav-link" href="/contacto" style="color: rgb(251, 249, 252);">Contacto</a></li>
+        </ul>
+    </div>
+
+</nav>
+
+
+    <!-- Hero Section (Destacar Producto/Servicio) -->
+    <section class="hero text-white text-center py-5" style="background-color: rgba(1, 4, 8, 0.6);">
+        <!-- Logo -->
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" style="width: 200px; height: auto;">
+
+    
+        <h1>Bienvenidos a la Empresa y Distribuidora</h1>
+        <h1>MASU S.R.L.</h1>
+        <p>Nos dedicamos a llevar hasta tu negocio y tu hogar bebidas de la mejor calidad.</p>
+    </section>
+    
+
+    <!-- Descripción breve -->
+    <section class="container my-5">
+        <h2>¿Qué ofrecemos?</h2>
+        <p>En Empresa MASU S.R.L. Ofrecemos una amplia variedad de productos como ser Cerveza artesanal,Jugos naturales frescos, Agua purificada y mineral, Refrescos, energizantes y más.</p>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="container my-5">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="background-color: transparent; border: none;">
+
+
+                    <div class="card-body">
+                        <p class="card-text">"Excelente servicio, superaron nuestras expectativas!"</p>
+                        <footer>- Juan Pérez, CEO de Empresa ABC</footer>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="background-color: transparent; border: none;">
+
+                    <div class="card-body">
+                        <p class="card-text">"Un equipo profesional y comprometido. Altamente recomendados."</p>
+                        <footer>- María López, Directora de CASCADA.</footer>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="background-color: transparent; border: none;">
+
+                        <div class="card-body">
+                        <p class="card-text">"Gracias a ellos, nuestra productividad se ha incrementado considerablemente."</p>
+                        <footer>- Carlos Gómez, EMBASADOR SA</footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botones de llamada a la acción -->
+    <section class="text-center my-5">
+        <a href="#" class="btn" style="background-color: #080605d3; color: rgb(255, 255, 255); border: none;">
+            Contáctanos
+        </a>
+        <a href="#" class="btn" style="background-color: #080605d3; color: white; border: none;">
+            Ver más servicios
+        </a>
+    </section>
+    
+    <!-- Redes Sociales -->
+    <section class="text-center my-4">
+        <h3>Conéctanos en redes sociales</h3>
+        <a href="#" class="btn" style="background-color: #080605d3; color: rgb(255, 255, 255); border: none;">Facebook</a>
+        <a href="#" class="btn" style="background-color: #080605d3; color: rgb(255, 255, 255); border: none;">Twitter</a>
+        <a href="#" class="btn" style="background-color: #080605d3; color: rgb(255, 255, 255); border: none;">Instagram</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Empresa MASU S.R.L. - Todos los derechos reservados</p>
+    </footer>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+

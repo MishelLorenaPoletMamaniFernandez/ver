@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Servicios - MASU S.R.L.</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+
+<!-- Menú de Navegación -->
+ <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(255, 255, 255, 0.192);">
+
+    <body style="background-image: url('{{ url_for('static', filename='images/fondo1.jpg') }}'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    min-height: 100vh;
+    color: white;">
+
+    </body>
+    <h1 class="navbar-brand" href="#" style="color: rgb(251, 249, 252); font-size: 30px;">MASU S.R.L.</h1>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="/" style="color: rgb(251, 249, 252);">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="/quienes-somos" style="color:rgb(251, 249, 252);">Quiénes somos</a></li>
+            <li class="nav-item"><a class="nav-link" href="/servicios" style="color: rgb(251, 249, 252);">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="/noticias" style="color: rgb(251, 249, 252);">Noticias</a></li>
+            <li class="nav-item"><a class="nav-link" href="/contacto" style="color: rgb(251, 249, 252);">Contacto</a></li>
+         </ul>
+    </div>
+</nav>
+
+<!-- Encabezado -->
+<section class="container text-center my-5">
+    <h1>Nuestros Servicios</h1>
+    <p>Conoce todo lo que podemos hacer por tu empresa.</p>
+</section>
+
+<!-- Servicios -->
+<section class="container mb-5">
+    <div class="row">
+        <!-- Servicio 1 -->
+        <div class="col-md-4">
+            <div class="card mb-4" style="background-color: transparent; border: none; box-shadow: none;">
+                <div class="card-body">
+                    <h5 class="card-title">Venta de bebidas</h5>
+                    <p class="card-text">Cerveza: Disponemos de una selección variada de cervezas nacionales e importadas, de diferentes estilos y marcas para todos los gustos.</p>
+                    <p class="card-text">Jugos Naturales: Jugos frescos elaborados con las mejores frutas, 100% naturales, perfectos para un refresco saludable.</p>
+                    <p class="card-text">Agua Purificada: Proveemos agua purificada y mineral en diversas presentaciones, garantizando la calidad y frescura que tu cuerpo necesita.</p>
+                    <p class="card-text">Otros Refrescos y Bebidas: Además de los productos mencionados, contamos con una línea de refrescos, energizantes y bebidas sin azúcar, ideales para todo tipo de cliente.</p>
+                    <a href="#" class="btn" style="background-color: transparent; color: #007bff; border: 1px solid #eef1f3;">Leer más</a>
+
+                </div>
+            </div>
+        </div>
+        <!-- Servicio 2 -->
+        <div class="col-md-4">
+            <div class="card mb-4" style="background-color: transparent; border: none; box-shadow: none;">
+                <div class="card-body">
+                    <h5 class="card-title">Suministros para eventos</h5>
+                    <p class="card-text">Ofrecemos un servicio especializado para eventos de todo tipo: bodas, cumpleaños, eventos corporativos, y más. Te proporcionamos bebidas a la medida de tus necesidades, asegurándonos de que todo esté bien abastecido para el disfrute de tus invitados.</p>
+                    <a href="#" class="btn" style="background-color: transparent; color: #007bff; border: 1px solid #eef1f3;">Leer más</a>
+
+                </div>
+            </div>
+        </div>
+        <!-- Servicio 3 -->
+        <div class="col-md-4">
+            <div class="card mb-4" style="background-color: transparent; border: none; box-shadow: none;">
+                <div class="card-body">
+                    <h5 class="card-title">Distribución a restaurantes y tiendas</h5>
+                    <p class="card-text">Si eres propietario de un restaurante, bar o tienda, ofrecemos un servicio de distribución regular y confiable. Nos encargamos de que tengas siempre los productos que necesitas a tiempo, sin preocupaciones.</p>
+                    <a href="#" class="btn" style="background-color: transparent; color: #007bff; border: 1px solid #eef1f3;">Leer más</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Empresa MASU S.R.L. - Todos los derechos reservados</p>
+</footer>
+<!-- Scripts de Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>
