@@ -1,0 +1,14 @@
+{% extends "admin_base.html" %}
+{% block contenido %}
+<h2>Facturas de Venta</h2>
+{% for venta in ventas %}
+  <p><strong>Cliente:</strong> {{ venta.cliente }}</p>
+  <ul>
+    {% for p in venta.productos %}
+      <li>{{ p.nombre }} - Bs.{{ p.precio }}</li>
+    {% endfor %}
+  </ul>
+  <p><strong>Total:</strong> Bs.{{ venta.total }}</p>
+  <hr>
+{% endfor %}
+{% endblock %}

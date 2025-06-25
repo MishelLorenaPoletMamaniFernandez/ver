@@ -1,0 +1,20 @@
+<!-- templates/productos/listar.html -->
+<h2>Lista de Productos</h2>
+<a href="{{ url_for('productos.crear_producto') }}">Nuevo Producto</a>
+<table border="1">
+    <tr>
+        <th>Nombre</th><th>Precio</th><th>Stock</th><th>Categoría</th><th>Acciones</th>
+    </tr>
+    {% for p in productos %}
+    <tr>
+        <td>{{ p.nombre }}</td>
+        <td>{{ p.precio }}</td>
+        <td>{{ p.stock }}</td>
+        <td>{{ p.categoria.nombre }}</td>
+        <td>
+            <a href="{{ url_for('productos.editar_producto', id=p.id) }}">Editar</a> |
+            <a href="{{ url_for('productos.eliminar_producto', id=p.id) }}">Eliminar</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel del Cliente - MASU S.R.L.</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background-image: url('{{ url_for('static', filename='images/fondo1.jpg') }}');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .container-box {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            width: 350px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+        }
+
+        .btn-masu {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            margin: 10px 0;
+            width: 100%;
+            transition: 0.3s;
+        }
+
+        .btn-masu:hover {
+            background-color: white;
+            color: black;
+        }
+
+        h2 {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container-box">
+        <h2>Bienvenido, Cliente</h2>
+
+        <a href="{{ url_for('ver_productos') }}" class="btn btn-masu">Ver Productos</a>
+        <a href="{{ url_for('ver_factura') }}" class="btn btn-masu">Ver Factura</a>
+        <a href="{{ url_for('detalle_compra') }}" class="btn btn-masu">Detalle de Compra</a>
+        <a href="{{ url_for('logout') }}" class="btn btn-danger mt-4">Cerrar Sesión</a>
+    </div>
+
+</body>
+</html>
+

@@ -1,0 +1,9 @@
+{% extends "admin_base.html" %}
+{% block contenido %}
+<h2>Distribución</h2>
+<ul>
+  {% for d in distribuciones %}
+    <li>{{ d.zona }} - Vehículo: {{ d.vehiculo }} - Responsable: {{ d.responsable }}</li>
+  {% endfor %}
+</ul>
+{% endblock %}

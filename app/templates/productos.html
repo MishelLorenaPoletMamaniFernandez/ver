@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Productos - MASU S.R.L.</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('{{ url_for('static', filename='images/fondo1.jpg') }}');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .box {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 10px;
+            width: 400px;
+            text-align: center;
+        }
+
+        .producto {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+
+        .btn-volver {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>Productos Disponibles</h2>
+        {% for p in productos %}
+            <div class="producto">
+                <strong>{{ p.nombre }}</strong> - Bs. {{ p.precio }}
+            </div>
+        {% endfor %}
+        <a href="{{ url_for('cliente') }}" class="btn btn-outline-light btn-volver">Volver</a>
+    </div>
+</body>
+</html>

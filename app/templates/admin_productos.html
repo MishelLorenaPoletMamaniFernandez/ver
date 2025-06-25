@@ -1,0 +1,9 @@
+{% extends "admin_base.html" %}
+{% block contenido %}
+<h2>Productos en Stock</h2>
+<ul>
+  {% for p in productos %}
+    <li>{{ p.nombre }} - Precio: Bs.{{ p.precio }} - Stock: {{ p.stock }}</li>
+  {% endfor %}
+</ul>
+{% endblock %}

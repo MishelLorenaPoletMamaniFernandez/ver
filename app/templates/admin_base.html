@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin - MASU S.R.L.</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('{{ url_for('static', filename='images/fondo1.jpg') }}');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            color: white;
+            padding: 40px;
+        }
+
+        .box {
+            background-color: rgba(0,0,0,0.7);
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        a {
+            color: lightblue;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>Panel de Administración</h2>
+        <nav>
+            <a href="{{ url_for('admin_productos') }}">Productos</a> |
+            <a href="{{ url_for('admin_empleados') }}">Empleados</a> |
+            <a href="{{ url_for('admin_distribucion') }}">Distribución</a> |
+            <a href="{{ url_for('admin_ventas') }}">Ventas</a> |
+            <a href="{{ url_for('logout') }}">Salir</a>
+        </nav>
+        <hr>
+        {% block contenido %}{% endblock %}
+    </div>
+</body>
+</html>
+

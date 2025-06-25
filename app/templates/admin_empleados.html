@@ -1,0 +1,9 @@
+{% extends "admin_base.html" %}
+{% block contenido %}
+<h2>Lista de Empleados</h2>
+<ul>
+  {% for e in empleados %}
+    <li>{{ e.nombre }} - Cargo: {{ e.cargo }}</li>
+  {% endfor %}
+</ul>
+{% endblock %}
